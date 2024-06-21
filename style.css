@@ -1,0 +1,242 @@
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgb(187, 155, 155), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Video background */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Content styling */
+.content {
+    position: relative;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.959);
+}
+
+.content h3 {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.content h1 {
+    margin-top: 20px;
+    margin-bottom: 800px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.Introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.808);
+    color: rgb(8, 8, 8);
+    padding: 20px;
+}
+
+.Introduction h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Introduction h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.Introduction b {
+    font-weight: 700;
+    color: #e67e22; /* Accent color for gym aesthetic */
+}
+
+/* Section styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #e67e22;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.section .highlight {
+    color: #e67e22;
+    font-weight: 700;
+}
+
+.btn-custom {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.testimonial {
+   
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.808);
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testimonial .author {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.facilities img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* No need to include embedded CSS in the HTML file if using an external style.css file */
+
+.content {
+    padding: 100px 0;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.466); /* Semi-transparent black background */
+    margin-top: 50px;
+}
+
+.section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #e67e22; /* Orange accent color */
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.section .highlight {
+    color: #e67e22;
+    font-weight: 700;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+}
+
+.card img {
+    height: 250px; /* Fixed height for consistency */
+   
+}
+.footer {
+    background-color: #222222b6;
+    color: #ffffff;
+    padding-top: 150px;
+    padding-bottom: 20px;
+
+    text-align: center;
+}
+
+.footer .social-icons a {
+    color: #e67e22;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+    color: #fff;
+}
+
+.footer .links a {
+    color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer .links a:hover {
+    color: #e67e22;
+}
+
+.footer .contact-info p {
+    margin: 50px 0;
+}
